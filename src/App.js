@@ -1,4 +1,4 @@
-
+import arrow  from './arrow 1.png';
 import './App.css';
 
 function App() {
@@ -16,9 +16,8 @@ function App() {
         Question 5
       </p>
       <div className='btnQuestions'>
-        <p>
-          
-        </p>
+      <img className='arrowLeft' src={arrow} alt="arrow png file"></img>
+      <img className='arrowRight'src={arrow} alt="arrow png file 2"></img>
       </div>
     </div>
   );
