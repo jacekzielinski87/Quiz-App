@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat&family=Poppins:wght@100;200&display=swap');
 
+.btnQuestions {
+  position:relative;
+  top:200px;
+}
+
+
 .arrowLeft {
    transform:rotate(180deg);
+   position:relative;
+   right:360px;
+}
+
+.arrowRight {
+  position:relative;
+  left:360px;
+  top:15px;
 }
 
 .App {
