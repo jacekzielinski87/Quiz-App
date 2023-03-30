@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat&family=Poppins:wght@100;200&display=swap');
 
-.btnQuestions {
-  position:relative;
-  top:200px;
-}
-
-.arrowLeft {
-   transform:rotate(180deg);
-   position:relative;
-   right:360px;
-}
-
-.arrowRight {
-  position:relative;
-  left:360px;
-  top:15px;
-}
-
 .App {
   background-color: #2a2e35;
   margin: 0 auto;
@@ -38,11 +21,21 @@
 .question-count {
     font-size: 2.4em;
     font-weight: bold;
-    font-family: 'Poppins';
+    font-family: 'Lilita One', cursive;
     background-color: #2a2e35;
     color:#fff;
+  }
 
-}
+  .answer-question {
+    display:grid;
+    width:50%;
+    margin:0 auto;
+    padding:80px;
+  }
+
+  .question-text {
+    font-size: 2em;
+  }
 
 
 

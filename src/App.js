@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-
-import arrow  from './arrow 1.png';
 import './App.css';
 
 function App() {
@@ -53,18 +51,23 @@ const questions = [
   }
 ]
 
+const [currentQuestion, setCurrentQuestion] = useState (1);
+
 return (
     <div className="App">
-      
       <div className='questionField'></div>
         <div className='question-count'>
           <span>Question 1</span>/{questions.length}
         </div>
-        <div className='btnQuestions'>
-      <img className='arrowLeft' src={arrow} alt="arrow png file"></img>
-      <img className='arrowRight'src={arrow} alt="arrow png file 2"></img>
+        <div className='question-text'>
+          {questions[currentQuestion].questionText}
+        </div>
+          <div className='answer-question'>
+            {questions[0].answerOptions.map((answerOption) => {
+              <button>{answerOption.answerText}</button>
+            })}
+          </div>
       </div>
-    </div>
   );
 }
 
