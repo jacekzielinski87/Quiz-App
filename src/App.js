@@ -54,7 +54,7 @@ const questions = [
   }
 ]
 
-const [currentQuestion, setCurrentQuestion] = useState (1);
+const [currentQuestion, setCurrentQuestion] = useState (0);
 
 return (
     <div className="App">

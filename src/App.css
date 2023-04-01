@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Montserrat&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Lilita+One&family=Montserrat&family=Poppins:wght@100;200&display=swap');
 
 .App {
   background-color: #2a2e35;
@@ -7,7 +7,7 @@
   height:100vh;
   text-align: center;
   background-image: url("./Quiz.jpg");
-  border-radius: 16px;
+  border-radius: 25%;
   
 }
 
@@ -22,8 +22,12 @@
     font-size: 2.4em;
     font-weight: bold;
     font-family: 'Lilita One', cursive;
-    background-color: #2a2e35;
-    color:#fff;
+    color:#212325;
+    border-radius:5%;
+    width:25%;
+    position: relative;
+    top:50px;
+    margin: 0 auto;
   }
 
   .answer-question {
@@ -34,9 +38,11 @@
   }
 
   .question-text {
-    font-size: 2.2em;
+    font-size: 3.2em;
     position:relative;
-    top:228px;
+    top:180px;
+    font-family: 'Lilita One';
+    color:#111010;
   }
 
   .arrow-questions {
@@ -48,13 +54,15 @@
   .nextLeft {
     border-radius: 50%;
     position: relative;
-    left:100px;
+    left:200px;
+    top:135px;
 }
 
   .nextRight {
     border-radius: 50%;
     position: relative;
-    right:100px;
+    right:200px;
+    top:135px;
     transform: rotate(180deg);
 }
 
