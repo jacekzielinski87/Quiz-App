@@ -7,62 +7,54 @@
   height:100vh;
   text-align: center;
   background-image: url("./Quiz.jpg");
-  border-radius: 25%;
-  
+  border-radius: 15%;
 }
 
-.quiz {
-  font-family: 'Poppins';
-  font-weight:bold ;
-  font-size: 2.6em;
-  color:#183149;
-}
 
 .question-count {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: bold;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Ibarra Real Nova', cursive;
     color:#212325;
-    border-radius:5%;
     width:25%;
     position: relative;
-    top:50px;
+    top:70px;
     margin: 0 auto;
-  }
+}
 
   .answer-question {
     display:grid;
     width:50%;
     margin:0 auto;
     padding:80px;
-  }
+}
 
   .question-text {
-    font-size: 3.2em;
+    font-size: 3em;
     position:relative;
     top:180px;
     font-family: 'Lilita One';
     color:#111010;
-  }
+}
 
   .arrow-questions {
     display:flex;
     justify-content: space-between;
-  }
+}
 
 
   .nextLeft {
     border-radius: 50%;
     position: relative;
-    left:200px;
-    top:135px;
+    left:150px;
+    bottom: 39px;
 }
 
   .nextRight {
     border-radius: 50%;
     position: relative;
-    right:200px;
-    top:135px;
+    right:150px;
+    bottom: 39px;
     transform: rotate(180deg);
 }
 
