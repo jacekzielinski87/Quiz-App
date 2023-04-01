@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
+import arrow from "./arrow.png";
+
+
 
 function App() {
 
@@ -66,6 +69,10 @@ return (
             {questions[0].answerOptions.map((answerOption) => {
               <button>{answerOption.answerText}</button>
             })}
+          </div>
+          <div className='arrow-questions'>
+            <img className='nextLeft' src={arrow}></img>
+            <img className='nextRight' src={arrow}></img>
           </div>
       </div>
   );
