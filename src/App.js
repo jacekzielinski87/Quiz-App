@@ -56,6 +56,15 @@ const questions = [
 
 const [currentQuestion, setCurrentQuestion] = useState (0);
 
+const AnswerButtonClick = () => {
+  const nextQuestion = currentQuestion + 1;
+  if(nextQuestion < questions.lenght){
+  setCurrentQuestion(nextQuestion);
+  } else {
+  alert("This is the end of Quiz!")
+  }
+}
+
 return (
     <div className="App">
       <div className='questionField'></div>
@@ -65,10 +74,11 @@ return (
         <div className='question-text'>
           {questions[currentQuestion].questionText}
         </div>
-          <div className='answer-question'>
-            {questions[0].answerOptions.map((answerOption) => {
-              <button>{answerOption.answerText}</button>
-            })}
+          <div className='answer-fields'>
+            <button className='btnAnswer'>Answer 1</button>
+            <button className='btnAnswer'>Answer 2</button>
+            <button className='btnAnswer'>Answer 3</button>
+            <button className='btnAnswer'>Answer 4</button>
           </div>
           <div className='arrow-questions'>
             <img className='nextLeft' src={arrow}></img>
