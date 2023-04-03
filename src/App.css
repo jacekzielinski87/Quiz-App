@@ -47,31 +47,29 @@
   .nextLeft {
     border-radius: 50%;
     position: relative;
-    left:150px;
+    left:20px;
     bottom: 39px;
 }
 
   .nextRight {
     border-radius: 50%;
     position: relative;
-    right:150px;
-    bottom: 39px;
+    right:20px;
+    bottom:39px;
     transform: rotate(180deg);
 }
 
-.answer-fields {
-    display:flex;
-    justify-content: space-between;
-    position:relative;
-    top: 150px;
-}
 
-.btnAnswer {
-  background-color: #69db7c;
-  border-radius: 25%;
+.answerBtn {
+  background-color: #ced4da;
+  border-radius: 10%;
   width:175px;
   height:50px;
+  width:15%;
   margin:0 auto;
+  position:relative;
+  top:150px;
+  padding:10px;
 }
   
 

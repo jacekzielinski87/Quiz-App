@@ -44,7 +44,7 @@ const questions = [
     ],
   },
   {
-    questionText: 'What is the name of the main character of Ghostwire: Tokyo?',
+    questionText: 'What is the name of the main character of Ghostwire:Tokyo?',
     answerOptions: [
       {answerText: 'Yaseotoko', isCorrect: false},
       {answerText: 'Akito', isCorrect: true},
@@ -54,7 +54,7 @@ const questions = [
   }
 ]
 
-const [currentQuestion, setCurrentQuestion] = useState (0);
+const [currentQuestion, setCurrentQuestion] = useState (1);
 
 const AnswerButtonClick = () => {
   const nextQuestion = currentQuestion + 1;
@@ -75,10 +75,8 @@ return (
           {questions[currentQuestion].questionText}
         </div>
           <div className='answer-fields'>
-            <button className='btnAnswer'>Answer 1</button>
-            <button className='btnAnswer'>Answer 2</button>
-            <button className='btnAnswer'>Answer 3</button>
-            <button className='btnAnswer'>Answer 4</button>
+            {questions[0].answerOptions.map((answerOption) => 
+            <button className='answerBtn'>{answerOption.answerText}</button> )}
           </div>
           <div className='arrow-questions'>
             <img className='nextLeft' src={arrow}></img>
