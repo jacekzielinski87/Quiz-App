@@ -22,55 +22,30 @@
     margin: 0 auto;
 }
 
-  .answer-question {
-    display:grid;
-    width:50%;
-    margin:0 auto;
-    padding:80px;
-}
 
-  .question-text {
+.question-text {
     font-size: 3em;
     position:relative;
     top:80px;
-    font-family: 'Lilita One';
+    font-family: 'Montserrat';
     color:#111010;
     margin: 0 auto;
+    font-family: 'Lilita One';
 }
-
-  .arrow-questions {
-    display:flex;
-    justify-content: space-between;
-}
-
-
-  .nextLeft {
-    border-radius: 50%;
-    position: relative;
-    left:20px;
-    bottom: 39px;
-}
-
-  .nextRight {
-    border-radius: 50%;
-    position: relative;
-    right:20px;
-    bottom:39px;
-    transform: rotate(180deg);
-}
-
 
 .answerBtn {
-  background-color: #ced4da;
-  border-radius: 10%;
-  width:175px;
-  height:50px;
-  width:15%;
-  margin:0 auto;
+  font-family: 'Montserrat,bold';
+  font-size: 1.2em;
+  background-color: #9a61db;
+  border-radius:6px;
+  width: 15%;
   position:relative;
-  top:150px;
-  padding:10px;
+  top:120px;
+  padding:6px;
 }
+
+
+
   
 
 

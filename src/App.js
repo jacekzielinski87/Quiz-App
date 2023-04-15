@@ -63,7 +63,7 @@ const AnswerButtonClick = () => {
   if(nextQuestion < questions.length){
     setCurrentQuestion(nextQuestion);
   }else{
-    alert("Your Quiz is done!")
+    alert("Your Quiz is done!");
   }
 }
 
@@ -79,7 +79,7 @@ return (
         </div>
           <div className='answer-fields'>
             {questions[currentQuestion].answerOptions.map((answerOption) => 
-            <button onClick={AnswerButtonClick}>{answerOption.answerText}</button>)}
+            <button className='answerBtn' onClick={AnswerButtonClick}>{answerOption.answerText}</button>)}
           </div>
         </div>
   );
