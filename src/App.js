@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import arrow from "./arrow.png";
+
 
 
 
@@ -54,16 +54,19 @@ const questions = [
   }
 ]
 
-const [currentQuestion, setCurrentQuestion] = useState (1);
+const [currentQuestion, setCurrentQuestion] = useState (0);
+
+const [showScore, setShowScore] = useState(false);
 
 const AnswerButtonClick = () => {
   const nextQuestion = currentQuestion + 1;
-  if(nextQuestion < questions.lenght){
-  setCurrentQuestion(nextQuestion);
-  } else {
-  alert("This is the end of Quiz!")
+  if(nextQuestion < questions.length){
+    setCurrentQuestion(nextQuestion);
+  }else{
+    alert("Your Quiz is done!")
   }
 }
+
 
 return (
     <div className="App">
@@ -75,14 +78,10 @@ return (
           {questions[currentQuestion].questionText}
         </div>
           <div className='answer-fields'>
-            {questions[0].answerOptions.map((answerOption) => 
-            <button className='answerBtn'>{answerOption.answerText}</button> )}
+            {questions[currentQuestion].answerOptions.map((answerOption) => 
+            <button onClick={AnswerButtonClick}>{answerOption.answerText}</button>)}
           </div>
-          <div className='arrow-questions'>
-            <img className='nextLeft' src={arrow}></img>
-            <img className='nextRight' src={arrow}></img>
-          </div>
-      </div>
+        </div>
   );
 }
 
