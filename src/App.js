@@ -58,7 +58,15 @@ const [currentQuestion, setCurrentQuestion] = useState (0);
 
 const [showScore, setShowScore] = useState(false);
 
-const AnswerButtonClick = () => {
+const [score, setScore] = useState(0);
+
+const AnswerButtonClick = (isCorrect) => {
+  if(isCorrect===true) {
+    alert('Good answer !');
+  }else {
+    alert('Wrong answer!');
+  }
+
   const nextQuestion = currentQuestion + 1;
   if(nextQuestion < questions.length){
     setCurrentQuestion(nextQuestion);
@@ -70,16 +78,16 @@ const AnswerButtonClick = () => {
 
 return (
     <div className="App">
-      <div className='questionField'></div>
+     <div className='questionField'></div>
         <div className='question-count'>
-          <span>Question 1</span>/{questions.length}
+          <span>Question {currentQuestion + 1}</span>/{questions.length}
         </div>
         <div className='question-text'>
           {questions[currentQuestion].questionText}
         </div>
           <div className='answer-fields'>
             {questions[currentQuestion].answerOptions.map((answerOption) => 
-            <button className='answerBtn' onClick={AnswerButtonClick}>{answerOption.answerText}</button>)}
+            <button className='answerBtn' onClick={() => AnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>)}
           </div>
         </div>
   );
